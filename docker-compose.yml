@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  warssau.api:
+    image: ${DOCKER_REGISTRY-}warssauapi
+    build:
+      context: .
+      dockerfile: WarSsau.Api/Dockerfile
+  
+  
